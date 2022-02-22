@@ -20,7 +20,7 @@ header h1 {
     color: rgb(35, 154, 177);
 }
 /*Fim do Header*/
-/*Inicio Main*/
+/*Inicio Section 1*/
 main {
     width: 100%;
     min-height: 100vh;
@@ -46,7 +46,7 @@ main form .inputs-container {
 
 main form .inputs-container input {
     margin: 1%;
-    padding: 1vh;
+    padding: 2vh;
     border-radius: 7px;
     color: black;
     outline: none;
@@ -58,5 +58,48 @@ main form .inputs-container input:focus {
 }
 
 main form .password-container {
-    
+    margin-top: 1%;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+main form .password-container i {
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    color: #777;
+    cursor: pointer;
+}
+
+main form .password-container #eye {
+    display: none;
+}
+/*Fim do Section 1*/
+/*Inicio do Section 2*/
+
+main form .password-infos {
+    width: 100%;
+    margin-top: 3%;
+}
+
+main form .password-infos a {
+    transition: 0.2s ease-in-out;
+}
+
+main form .password-infos a:hover {
+    color: #639DF2;
+}
+/*Fim do Section 2*/
+/*Button*/
+ main form .button {
+       
+ }
+
+main form .button:hover {
+    background:#fff;
+    color: #18acfe;
+ }
