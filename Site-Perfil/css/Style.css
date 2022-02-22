@@ -40,8 +40,11 @@ main form {
 }
 
 main form .inputs-container {
+    margin-top: 10%;
 
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main form .inputs-container input {
@@ -96,10 +99,11 @@ main form .password-infos a:hover {
 /*Fim do Section 2*/
 /*Button*/
  main form .button {
-       
- }
+
+
+}
 
 main form .button:hover {
     background:#fff;
     color: #18acfe;
- }
+}
