@@ -9,53 +9,46 @@
     <link rel="stylesheet" href="./css/Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;1,200&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
-        <hr>
         <h1>Profile</h1>
-        <hr>
     </header>
-            <nav>
-                <p></p>
-            </nav>
     <main>
         <form>
             <section class="inputs-container">
-                <input type="email" placeholder="Email">
-
+                <input type="email" placeholder="example@gmail.com">
+                
                 <div class="password-container">
-                    <input type="password" id="field-password" class="field-password" placeholder="*******">
+                    <input type="password" id="field-password" class="field-password" placeholder="********">
 
-                    <i></i>
-                    <i></i>
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
                 </div>
             </section>
 
             <section class="password-infos">
                 <div>
                     <input type="checkbox">
-                        <span>Deixar logado ?</span>
+                    <span>Lembrar da senha ?</span>
                 </div>
-                    <a href="#">Esqueçeu sua senha ?</a>
+                <a href="#">Esqueceu a senha ?</a>
+                
             </section>
 
-            <button class="button-login">Login</button>
+            <button id="btn-login"> Login </button>
 
             <section class="links-container">
-                <span>Ou acesse com :</span>
+                <span>Ou entre com :</span>
 
                 <aside>
-                    <a href="#"><i></i></a>
-                    <a href="#"><i></i></a>
-                    <a href="#"><i></i></a>
+                    <a href=""><i class="fa-brands fa-google Google"></i></i></a>
+                    <a href=""><i class="fa-brands fa-facebook Facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin Linkedin"></i></i></a>
                 </aside>
-
             </section>
-        </form>
-    </main>
 </body>
     <script src="./js/Style.js"></script>
 </html>
