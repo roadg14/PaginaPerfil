@@ -1,0 +1,131 @@
+<div id="search-autocomplete" class="container-BarraDePesquisa">
+                <input type="text" class="search-box" placeholder="Pesquise aqui!">
+                <label class="form-label" for="form1">Search</label>
+                <a href="#"></a>
+
+/////////////////////////////////////////////////////////////////////
+
+<div class="input-group">
+  <div class="form-outline">
+    <input id="search-input" type="search" id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button id="search-button" type="button" class="btn btn-primary">
+    <i class="fas fa-search"></i>
+  </button>
+</div>
+
+//////////////////////////////////////////////////////////////////////////////////
+
+<main>
+        <form>
+            <div class="container-input">
+                <input type="search" placeholder="Search">
+                <button type="button" class="btn btn-outline-dark" class="btn">Search</button>
+            </div>
+        </form>
+    </main>
+
+///////////////////////////////////////////////////////////////////////////////////
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(rgba(212, 214, 69, 0.133));
+}
+
+h2 {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin-top: 5px;
+}
+
+.pesquisa-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pesquisa-box .login-box {
+    position: relative;
+}
+
+.pesquisa-box .login-box input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 2px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.pesquisa-box .login-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.pesquisa-box .login-box input:focus ~ label,
+.pesquisa-box .login-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+}
+
+//////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../BarradePesquisa/Css/Style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>Login</h2>
+    </header>
+    <div class="pesquisa-box">
+       <form action="">
+           <div class="login-box">
+                <input type="text" name="" required="">
+                <label for="">Usuario</label>
+           </div>
+           <div class="login-box">
+               <input type="password" name="" required="">
+               <label for="">Senha</label>
+           </div>
+           <a href="">Entrar</a>
+       </form>
+   </div>
+</body>
+</html>

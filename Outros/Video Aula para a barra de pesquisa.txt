@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Base de conhecimento Sesc.</title>
+</head>
+<body>
+    <header>
+        <h1>Sesc</h1>
+    </header>
+    <main>
+        <form>
+            <label for="">Pesquise oque deseja!</label>
+            <section class="inputs-search">
+                <input class="search-text" type="text" placeholder="Search">
+                <a href=""></a>
+            </section>
+            <div>
+                <button>Search</button>
+            </div>
+        </form>
+    </main>
+<footer>Douglas Rodrigues &copy; </footer>
+</body>
+</html>
+
+
+
+html {
+    background: linear-gradient(#F0D81D, rgb(33, 152, 173));
+}
+
+h1 {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+/*Section da Search*/
+main form {
+    height: 75vh;
+    margin-top: 5%;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+main form .input-search {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 15px;
+    padding-left: 6vh;
+    padding-right: 7vh;
+}
+https://www.youtube.com/watch?v=33l_zxzPR2g
