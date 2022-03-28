@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Poppins";
+
+    
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.logo{
+    margin-top: 10px;
+    width: 50px;
+}
+
+.navegador-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /*Isso deixa o site se regurar o tamanho da pagina. se fica pequeno não*/
+}
+
+.navegador-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 16px;
+    font-size: 18px
+}
+
+.navegador-menu li a:hover {
+    /*UMA COR PARA */
+    border-bottom: 1px solid black;
+}
+
+/********************************************************************/
+
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

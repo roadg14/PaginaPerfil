@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background: linear-gradient(45deg, #138AEF, #13E0EF);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+p {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+/*Decoração do nome History*/
+header h1 {
+    font-size: 50px;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+header h1::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 150px;
+    bottom: 7px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #F77F02, #E0141E);
+}
+/*Fim da decoração do History*/
+/*Decoração do nome CADASTRO*/
+.text-cadastro p{
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.text-cadastro p::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 95px;
+    bottom: 0px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #F77F02, #E0141E);
+}
+/*Fim da decoração do cadastro*/
+/*Alinhamento dos nomes*/
+.text-cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cadastro {
+    display: flex;
+    justify-content: center;
+
+    color: black;
+    
+}
+ .container-cadastro input {
+    outline: 0;
+    border-bottom: 1px solid #E0141E;
+}
+
+.btn-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5px;
+}

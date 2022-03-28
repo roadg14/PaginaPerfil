@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container-menu">
+            <a href="/Flexbox/index.html"></a>
+            <img src="./img/dedo-do-meio.gif" alt="logo" class="logo">
+        </div>
+
+        <ul class="navegador-menu">
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#">Explora Mais</a>
+            </li>
+            <li>
+                <a href="#">Quem Somos</a>
+            </li>
+            <li>
+                <a href="#">Novas ideias</a>
+            </li>
+            <li>
+                <a href="#">Fale Conosco</a>
+            </li>
+        </ul>
+        <div class="container-menu">
+            <a href="/Flexbox/index.html"></a>
+            <img src="./img/dedo-apontando.gif" alt="logo" class="logo">
+        </div>
+    </header>
+    <main>
+        <form class="container-cadastro">
+            <fieldset>
+                <legend> Dados pessoais</legend>
+            <table cellspacing="10">
+                <tr>
+                <td>
+                    <label for="">Nome:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                </td>
+                <td>
+                    <label for="">Sobrenome:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </td>
+                <td>
+                    <label for=""></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Data de nascimento:</label>
+                </td>
+                <td align="left">
+                    <input type="text" name="dia" size="2" maxlength="2" placeholder="Dia">
+                    <input type="text" name="mes" size="2" maxlength="2" placeholder="Mês">
+                    <input type="text" name="ano" size="4" maxlength="4" placeholder="Ano">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="rg">Rg:</label>
+                </td>
+                <td>
+                    <input type="text" name="rg" size="13" maxlength="8" placeholder="Rg">
+                </td>
+                <tr>
+                    <td>
+                        <label for="">Cpf:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="cpf" size="8" maxlength="13" placeholder="Cpf">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="JavaScript">
+
+        function valida ()
+        {
+            document.formulario.busca.style.borderColor = "FFFFFF";
+            document.formulario.busca.style.backgroundColor = "FFFFFF";
+            if (document.formulario.busca.value.length < 3)
+            {
+                alert("Digite ao menos 3 letras ...");
+                document.formulario.busca.style.borderColor = "#FF4500";
+                document.formulario.busca.style.backgroundColor = "FFFFE0";
+                document.formulario.busca.focus();
+                return false;
+            }
+            return true;
+        }
+
+        var entrou = 0;
+        var saiu = 0;
+
+        function entrou()
+        {
+            entro+=1;
+            var texto = "Entrou = "+entrou+"" Saiu = "+saiu";
+            document.getElementById("info").innerHTML = "texto";
+            document.getElementById("div1").style.background = "red";
+        }
+        function Saiu()
+        {
+            saiu+=1;
+            var texto = "Entrou = "+entrou+"" Saiu = "+saiu"
+            document.getElementById("info").innerHTML = "texto";
+            document.getElementById("div1").style.background = "white";
+        }
+    </script>
+</head>
+<body>
+    <form name="formulario" action="busca.php" onsubmit="return valida(); ">
+        Procurar: <input type="text" name="busca" required
+                        onmouseenter="Entrou()" onmouseleave="Saiu()"><br>
+        <input type="submit">
+    </form>
+    <div id="div1" style="max.max-width: 100vw; width:150px;">
+            <span id="info">Entradas e Saidas</span>
+    </div>
+</body>
+</html>
